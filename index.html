@@ -13,19 +13,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
-    <!-- fullpage -->
-
+    <!-- fullpage.js, makes full page easily. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css"
         integrity="sha512-RVmrWua3k1yTDEOg4Yzs2bK5+Thh7nM6jrhDq/6/5/Mwa0JbYe4pP4YMK5sqghKz01T3DgrwYc57Jaf1PSurCg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- less, an extension for css. -->
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
 </head>
 
 <body>
     <div id="fullpage">
+        <!-- the first page -->
+        <div class="section first-screen">
+            <h1 class="text-center title"> Git Assist </h1>
+            <h2 class="text-center description">Welcome to the open source world.</h2>
+        </div>
+        <!-- the second page -->
         <div class="section">Some section</div>
+        <!-- third page -->
         <div class="section">Some section</div>
-        <div class="section">Some section</div>
+        <!-- forth page -->
         <div class="section">Some section</div>
     </div>
 
@@ -34,7 +42,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         var myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#eaeef2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+            sectionsColor: ['#eaeef2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            licenseKey: 'WAIT'
         });
     </script>
 </body>
