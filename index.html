@@ -30,11 +30,20 @@
             <h2 class="text-center description">Welcome to the open source world.</h2>
         </div>
         <!-- the second page -->
-        <div class="section">Some section</div>
+        <div class="section">
+            <!-- competitive analyze -->
+            <h1 class="text-center"> What are your options? </h1>
+            <table>
+            </table>
+        </div>
         <!-- third page -->
-        <div class="section">Some section</div>
+        <div class="section">
+            <h1 class="text-center"> Our users </h1>
+        </div>
         <!-- forth page -->
-        <div class="section">Some section</div>
+        <div class="section">
+            <h1 class="text-center"> Our product </h1>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"
@@ -42,8 +51,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         var myFullpage = new fullpage('#fullpage', {
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'forthPage'],
             sectionsColor: ['#eaeef2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-            licenseKey: 'WAIT'
+            licenseKey: 'WAIT',
+            navigation: true,
+            // slidesNavigation: true,
+            // slidesNavPosition: 'bottom',
+            // controlArrows: false,
         });
     </script>
 </body>
