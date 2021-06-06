@@ -2,72 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Assist</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git Assist</title>
 
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-    <!-- fullpage.js, makes full page easily. -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css"
-        integrity="sha512-RVmrWua3k1yTDEOg4Yzs2bK5+Thh7nM6jrhDq/6/5/Mwa0JbYe4pP4YMK5sqghKz01T3DgrwYc57Jaf1PSurCg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- less, an extension for css. -->
-    <link rel="stylesheet/less" type="text/css" href="./static/styles.less" crossorigin="anonymous" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- fullpage.js, makes full page easily. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css"
+    integrity="sha512-RVmrWua3k1yTDEOg4Yzs2bK5+Thh7nM6jrhDq/6/5/Mwa0JbYe4pP4YMK5sqghKz01T3DgrwYc57Jaf1PSurCg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- less, an extension for css. -->
+  <link rel="stylesheet/less" type="text/css" href="./static/styles.less" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
 </head>
 
 <body>
-    <div id="fullpage">
-        <!-- the first page -->
-        <div class="section first-screen">
-            <h1 class="text-center title"> Git Assist </h1>
-            <h2 class="text-center description">Welcome to the open source world.</h2>
-        </div>
-        <!-- the second page -->
-        <div class="section second-screen">
-            <!-- competitive analyze -->
-            <div class="row">
-                <div class="col-12 col-lg-6 col-xl-4">
-                    <h1 class="text-center open-source"> Open Source </h1>
-                    <h2 class="text-center description"> is becoming more and more </h2>
-                    <h1 class="text-center popular">Popular</h1>
-                </div>
-                <div class="col-12 col-lg-6 col-xl-8">
-                    <img class="img-fluid" src="./static/images/open-source-contributors.png"
-                        alt="big companies are contributing to open source communities" />
-                </div>
-            </div>
-        </div>
-        <!-- third page -->
-        <div class="section">
-            <h1 class="text-center"> Our users </h1>
-        </div>
-        <!-- forth page -->
-        <div class="section">
-            <h1 class="text-center"> Our product </h1>
-        </div>
+  <div id="fullpage">
+    <!-- the first page -->
+    <div class="section first-screen">
+      <h1 class="text-center title"> Git Assist </h1>
+      <h2 class="text-center description">Welcome to the open source world.</h2>
     </div>
+    <!-- the second page -->
+    <div class="section second-screen">
+      <!-- competitive analyze -->
+      <div class="row">
+        <div class="col-12 col-lg-6 col-xl-4">
+          <h1 class="text-center open-source"> Open Source </h1>
+          <h2 class="text-center description"> is becoming more and more </h2>
+          <h1 class="text-center popular">Popular</h1>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-8">
+          <a
+            href="https://www.whitesourcesoftware.com/resources/blog/the-top-10-companies-contributing-to-open-source/">
+            <img class="img-fluid" src="./static/images/open-source-contributors.png"
+              alt="big companies are contributing to open source communities" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- third page -->
+    <div class="section third-screen">
+      <h2 class="text-center"> ...but </h2>
+      <h1 class="text-center"> It is hard to get started.</h1>
+      <!-- competitors -->
+      <div class="row row-cols-3 row-cols-md-3 g-2 g-md-5 m-auto competitors">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/images/GitHub-Mark-120px-plus.png" class="card-img-top" alt="GitHub Explore">
+            <div class="card-body">
+              <h5 class="card-title">GitHub Explore</h5>
+              <p class="card-text">A great for exploring something you may be interested in. But for something you can
+                start working on... We don't think so.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/images/advisor.jpg" class="card-img-top" alt="Advisor">
+            <div class="card-body">
+              <h5 class="card-title">Ask help from Advisor</h5>
+              <p class="card-text">The advisor may not know you that well, recommending something that may not suite
+                your level.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/images/internet-random.jpg" class="card-img-top" alt="Random visit internet">
+            <div class="card-body">
+              <h5 class="card-title">Visit Internet for random recommendation</h5>
+              <p class="card-text">Even worse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- forth page -->
+    <div class="section">
+      <h1 class="text-center"> Our product </h1>
+    </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"
-        integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        var myFullpage = new fullpage('#fullpage', {
-            anchors: ['firstPage', 'secondPage', 'thirdPage', 'forthPage'],
-            sectionsColor: ['#eaeef2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-            licenseKey: 'WAIT',
-            navigation: true,
-            // slidesNavigation: true,
-            // slidesNavPosition: 'bottom',
-            // controlArrows: false,
-        });
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"
+    integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    var myFullpage = new fullpage('#fullpage', {
+      anchors: ['firstPage', 'secondPage', 'thirdPage', 'forthPage'],
+      sectionsColor: ['#eaeef2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+      licenseKey: 'WAIT',
+      navigation: true,
+      // scrollBar: true
+      // slidesNavigation: true,
+      // slidesNavPosition: 'bottom',
+      // controlArrows: false,
+      normalScrollElements: ".competitors"
+    });
+  </script>
 </body>
 
 </html>

@@ -3,6 +3,7 @@
     padding-right: 3%;
 }
 
+
 .first-screen {
     color: #24292e;
 
@@ -21,11 +22,40 @@
     color: #24292e;
 
     .open-source {
-        font-size  : 8vh;
-        line-height: 1.8;
+        font-size    : 8vh;
+        margin-bottom: 4vh;
     }
 
     .popular {
         font-size: 9vh;
+    }
+}
+
+.third-screen {
+
+    .competitors {
+        @media (min-width: 720px) {
+            max-width: 80vw;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 60vw;
+        }
+    }
+
+    // for smaller device, fallback to overflow-x
+    @media(max-width: 540px) {
+        .competitors {
+            height: 60vh;
+
+            overflow-x    : auto;
+            flex-direction: row;
+            flex-wrap     : nowrap;
+        }
+
+        .col {
+            width  : 70vw;
+            display: inline-block;
+        }
     }
 }
