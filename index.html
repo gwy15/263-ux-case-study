@@ -86,24 +86,86 @@
         </div>
       </div>
     </div>
-    <!-- forth page -->
-    <div class="section user-research">
-      <h1 class="text-center"> User Research </h1>
+
+    <!-- methods page -->
+    <div class="section methods-employed1">
+      <h1 class="text-center">Methods</h1>
+      <!-- competitors -->
+      <div class="row row-cols-3 row-cols-md-3 g-2 g-md-5 m-auto methods">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/images/explore.png" class="card-img-top" alt="GitHub Explore Logo">
+            <div class="card-body">
+              <h5 class="card-title">Competitor Analysis</h5>
+              <p class="card-text">In order to better understand how our product could successfully reach the market, we analyzed potential competitors to our product and their strengths/weaknesses.  </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/images/affinity-diagram.png" class="card-img-top" alt="Affinity Diagram">
+            <div class="card-body">
+              <h5 class="card-title">User Research and Personas</h5>
+              <p class="card-text">We conducted 9 30 minute interviews with potential users within our target audience in order to distill 3 personas that describe what different types of users want to see in our product.
+                We performed thematic analysis in the form of affinity diagramming in to inform these personas. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/images/wireframe1.png" class="card-img-top" alt="Initial Wireframe">
+            <div class="card-body">
+              <h5 class="card-title">User Stories and Wireframes</h5>
+              <p class="card-text">From our personas, we generated a set of 23 user stories (requirements in the form of “as an A I want to be able to B in order to C”) that cover the primary functionalities of our product.
+                Using these as a basis, we created an interactive low-fidelity wireframe that satisfies each user story.  </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- methods page -->
+    <div class="section methods-employed2">
+      <h1 class="text-center">Methods</h1>
+      <!-- competitors -->
+      <div class="row row-cols-2 row-cols-md-2 g-2 g-md-5 m-auto methods">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/images/wireframe2.png" class="card-img-top" alt="Updated Wireframe">
+            <div class="card-body">
+              <h5 class="card-title">User Evaluation Wireframe Iteration</h5>
+              <p class="card-text">We performed a total of 6 user evaluations where we asked users to perform tasks using our interactive low-fidelity prototype, and distilled a list of the most important issues found.
+                We then fixed these issues in a new wireframe iteration.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/images/wireframe3.png" class="card-img-top" alt="High-Fidelity Prototype">
+            <div class="card-body">
+              <h5 class="card-title">Heuristic Evaluation High-Fidelity Prototype</h5>
+              <p class="card-text">We then created a high-fidelity model based on our wireframe on which we performed heuristic analysis. We created a large list of potential heuristic issues of varying severity,
+                and distilled a small list of the most urgent problems. We then fixed these problems in order to create the final version of our interactive prototype. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
   <script>
     var myFullpage = new fullpage('#fullpage', {
-      anchors: ['welcome', 'its-getting-popular', 'its-also-hard', 'user-research'],
-      sectionsColor: ['#ffaebc', '#ffa384', '#5885af', '#bcece0'],
+      anchors: ['welcome', 'its-getting-popular', 'its-also-hard', 'methods-employed1', 'methods-employed2'],
+      sectionsColor: ['#ffaebc', '#ffa384', '#5885af', '#bcece0', '#bcece0'],
       licenseKey: 'WAIT',
       navigation: true,
       // scrollBar: true
       // slidesNavigation: true,
       // slidesNavPosition: 'bottom',
       // controlArrows: false,
-      normalScrollElements: ".competitors"
+      normalScrollElements: ".competitors, .methods"
     });
   </script>
 </body>

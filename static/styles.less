@@ -65,4 +65,36 @@
     }
 }
 
-.user-research {}
+.methods-employed1, .methods-employed2 {
+
+    h1,
+    h2 {
+        color: rgb(130, 100, 100);
+    }
+
+    .methods {
+        @media (min-width: 720px) {
+            max-width: 80vw;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 60vw;
+        }
+    }
+
+    // for smaller device, fallback to overflow-x
+    @media(max-width: 540px) {
+        .methods {
+            height: 80vh;
+
+            overflow-x    : auto;
+            flex-direction: row;
+            flex-wrap     : nowrap;
+        }
+
+        .col {
+            width  : 70vw;
+            display: inline-block;
+        }
+    }
+}
