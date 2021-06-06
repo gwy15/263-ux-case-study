@@ -27,14 +27,13 @@
 
 <body>
   <div id="fullpage">
-    <!-- the first page -->
-    <div class="section first-screen">
+    <!-- the welcome page -->
+    <div class="section welcome">
       <h1 class="text-center title"> Git Assist </h1>
       <h2 class="text-center description">Welcome to the open source world.</h2>
     </div>
     <!-- the second page -->
-    <div class="section second-screen">
-      <!-- competitive analyze -->
+    <div class="section its-getting-popular">
       <div class="row">
         <div class="col-12 col-lg-6 col-xl-4">
           <h1 class="text-center open-source"> Open Source </h1>
@@ -50,8 +49,8 @@
         </div>
       </div>
     </div>
-    <!-- third page -->
-    <div class="section third-screen">
+    <!-- competitors page -->
+    <div class="section its-also-hard">
       <h2 class="text-center"> ...but </h2>
       <h1 class="text-center"> It is hard to get started.</h1>
       <!-- competitors -->
@@ -61,8 +60,8 @@
             <img src="./static/images/GitHub-Mark-120px-plus.png" class="card-img-top" alt="GitHub Explore">
             <div class="card-body">
               <h5 class="card-title">GitHub Explore</h5>
-              <p class="card-text">A great for exploring something you may be interested in. But for something you can
-                start working on... We don't think so.</p>
+              <p class="card-text">A great place for exploring something you may be interested in.
+                But for finding something you can start working on... We don't think so.</p>
             </div>
           </div>
         </div>
@@ -81,23 +80,23 @@
             <img src="./static/images/internet-random.jpg" class="card-img-top" alt="Random visit internet">
             <div class="card-body">
               <h5 class="card-title">Visit Internet for random recommendation</h5>
-              <p class="card-text">Even worse.</p>
+              <p class="card-text">Please do not waste your time.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- forth page -->
-    <div class="section">
-      <h1 class="text-center"> Our product </h1>
+    <div class="section user-research">
+      <h1 class="text-center"> User Research </h1>
     </div>
   </div>
 
 
   <script>
     var myFullpage = new fullpage('#fullpage', {
-      anchors: ['firstPage', 'secondPage', 'thirdPage', 'forthPage'],
-      sectionsColor: ['#eaeef2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+      anchors: ['welcome', 'its-getting-popular', 'its-also-hard', 'user-research'],
+      sectionsColor: ['#ffaebc', '#ffa384', '#5885af', '#bcece0'],
       licenseKey: 'WAIT',
       navigation: true,
       // scrollBar: true
