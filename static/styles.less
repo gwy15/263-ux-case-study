@@ -18,7 +18,7 @@
     }
 }
 
-.its-getting-popular, .problem {
+.its-getting-popular, .problem, .users1, .users2 {
     color: #24292e;
 
     .open-source {
@@ -86,7 +86,6 @@
     @media(max-width: 540px) {
         .methods {
             height: 80vh;
-
             overflow-x    : auto;
             flex-direction: row;
             flex-wrap     : nowrap;
@@ -94,6 +93,35 @@
 
         .col {
             width  : 70vw;
+            display: inline-block;
+        }
+    }
+}
+
+.personas {
+
+    .personas-list {
+        @media (min-width: 720px) {
+            max-width: 90vw;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 70vw;
+        }
+    }
+
+    // for smaller device, fallback to overflow-x
+    @media(max-width: 540px) {
+        .personas-list {
+            height: 50vh;
+
+            overflow-x    : auto;
+            flex-direction: row;
+            flex-wrap     : nowrap;
+        }
+
+        .col {
+            width  : 90vw;
             display: inline-block;
         }
     }
