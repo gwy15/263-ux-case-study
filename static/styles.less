@@ -29,10 +29,11 @@
     }
 }
 
+.thankyou,
 .welcome {
     color: #24292e;
 
-    .title {
+    h1.title {
         @media (orientation: landscape) {
             font-size: 10vw;
         }
@@ -55,6 +56,11 @@
         font-size: 9vh;
     }
 
+    .description {
+        font-size: 1.5rem;
+        color    : rgb(87, 87, 87);
+    }
+
 
     @media (max-width: 720px) {
         .smaller-font-size {
@@ -64,11 +70,6 @@
 }
 
 .user-research-findings {
-    .description {
-        font-size: 1.5rem;
-        color    : rgb(87, 87, 87);
-    }
-
     @media (min-width: 720px) {
         .slidable {
             max-width: 90vw;
@@ -92,7 +93,7 @@
 
     h1,
     h2 {
-        color: rgb(225, 229, 233);
+        color: rgb(233, 237, 241);
     }
 }
 
@@ -109,6 +110,21 @@
     .slidable {
         @media (min-width: 1200px) {
             max-width: 80vw;
+        }
+    }
+}
+
+.reflections {
+    ul {
+        li.description {
+            font-size    : 2rem;
+            margin-bottom: 20px;
+
+            @media(max-width: 720px) {
+                margin-left : 2rem;
+                margin-right: 2rem;
+                font-size   : 1.5rem;
+            }
         }
     }
 }
