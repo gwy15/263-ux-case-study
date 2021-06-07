@@ -3,6 +3,31 @@
     padding-right: 3%;
 }
 
+.slidable {
+    @media (min-width: 720px) {
+        max-width: 80vw;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 60vw;
+    }
+}
+
+// for smaller device, fallback to overflow-x
+@media(max-width: 540px) {
+    .slidable {
+        min-height: 60vh;
+
+        overflow-x    : auto;
+        flex-direction: row;
+        flex-wrap     : nowrap;
+    }
+
+    .col {
+        width  : 80vw;
+        display: inline-block;
+    }
+}
 
 .welcome {
     color: #24292e;
@@ -18,23 +43,48 @@
     }
 }
 
-.its-getting-popular,
-.problem,
-.users1,
-.users2,
-.wireframe1,
-.wireframe2,
-.wireframe3,
-.wireframe4 {
+.section {
     color: #24292e;
 
-    .open-source {
-        font-size    : 8vh;
-        margin-bottom: 4vh;
+    .title {
+        font-size    : 7vh;
+        margin-bottom: 2vh;
     }
 
-    .popular {
+    .title2 {
         font-size: 9vh;
+    }
+
+
+    @media (max-width: 720px) {
+        .smaller-font-size {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.user-research-findings {
+    .description {
+        font-size: 1.5rem;
+        color    : rgb(87, 87, 87);
+    }
+
+    @media (min-width: 720px) {
+        .slidable {
+            max-width: 90vw;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .slidable {
+            max-width: 80vw;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .slidable {
+            max-width: 70vw;
+        }
     }
 }
 
@@ -43,32 +93,6 @@
     h1,
     h2 {
         color: rgb(225, 229, 233);
-    }
-
-    .competitors {
-        @media (min-width: 720px) {
-            max-width: 80vw;
-        }
-
-        @media (min-width: 1200px) {
-            max-width: 60vw;
-        }
-    }
-
-    // for smaller device, fallback to overflow-x
-    @media(max-width: 540px) {
-        .competitors {
-            height: 80vh;
-
-            overflow-x    : auto;
-            flex-direction: row;
-            flex-wrap     : nowrap;
-        }
-
-        .col {
-            width  : 70vw;
-            display: inline-block;
-        }
     }
 }
 
@@ -79,58 +103,6 @@
     h2 {
         color: rgb(130, 100, 100);
     }
-
-    .methods {
-        @media (min-width: 720px) {
-            max-width: 80vw;
-        }
-
-        @media (min-width: 1200px) {
-            max-width: 60vw;
-        }
-    }
-
-    // for smaller device, fallback to overflow-x
-    @media(max-width: 540px) {
-        .methods {
-            height        : 80vh;
-            overflow-x    : auto;
-            flex-direction: row;
-            flex-wrap     : nowrap;
-        }
-
-        .col {
-            width  : 70vw;
-            display: inline-block;
-        }
-    }
 }
 
-.personas {
-
-    .personas-list {
-        @media (min-width: 720px) {
-            max-width: 90vw;
-        }
-
-        @media (min-width: 1200px) {
-            max-width: 70vw;
-        }
-    }
-
-    // for smaller device, fallback to overflow-x
-    @media(max-width: 540px) {
-        .personas-list {
-            height: 50vh;
-
-            overflow-x    : auto;
-            flex-direction: row;
-            flex-wrap     : nowrap;
-        }
-
-        .col {
-            width  : 90vw;
-            display: inline-block;
-        }
-    }
-}
+.personas {}
