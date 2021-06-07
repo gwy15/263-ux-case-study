@@ -1,6 +1,16 @@
 Access the live website here: https://gwy15.github.io/263-ux-case-study/
 Or run these files with a simple local web server (ex. python -m http.server)
 
+The Chrome dev tool touch emulation interacts oddly with fullPage.js, and 
+sometimes a page reload is necessary for the click and drag (touch swipe) 
+functionality to work for virtual devices.
+
+Files:
+
+index.html (HTML)
+static/styles.less (CSS)
+static/images/*.jpg/png (images)
+
 
 Basic HTML content used:
 
