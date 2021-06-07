@@ -29,7 +29,6 @@
     }
 }
 
-.thankyou,
 .welcome {
     color: #24292e;
 
@@ -59,14 +58,22 @@
     .description {
         font-size: 1.5rem;
         color    : rgb(87, 87, 87);
-    }
 
-
-    @media (max-width: 720px) {
-        .smaller-font-size {
-            font-size: 0.8rem;
+        @media (max-width: 720px) {
+              font-size: 1rem;
         }
     }
+
+    h1.title {
+      @media(max-width: 720px) {
+          margin-left : 2rem;
+          margin-right: 2rem;
+          font-size   : 2rem;
+      }
+    }
+
+
+
 }
 
 .user-research-findings {
@@ -114,7 +121,7 @@
     }
 }
 
-.reflections {
+.reflections, .user-evaluation, .heuristic-evaluation, .acknowledgements {
     ul {
         li.description {
             font-size    : 2rem;
@@ -123,8 +130,15 @@
             @media(max-width: 720px) {
                 margin-left : 2rem;
                 margin-right: 2rem;
-                font-size   : 1.5rem;
+                font-size   : 1rem;
             }
         }
+    }
+    h1.title {
+      @media(max-width: 720px) {
+          margin-left : 2rem;
+          margin-right: 2rem;
+          font-size   : 2rem;
+      }
     }
 }
